@@ -1,0 +1,53 @@
+---
+export interface Props {
+	title: string;
+	color: string;
+	href: string;
+}
+
+const { href, title, color } = Astro.props as Props;
+---
+
+<a href={href}>
+	<div class={color}>{title}</div>
+</a>
+<style>
+	.btn {
+		width: 50%;
+		cursor: pointer;
+		font-weight: 600;
+		padding: 0.5rem 1rem;
+		border-radius: .25rem;
+		border-radius: 1.5rem;
+	}
+
+	.btn-yellow {
+		border: 1px solid black;
+		background: #ffaa00;
+		color: #fff;
+	}
+	.btn-yellow:hover {
+		border: 1px solid white;
+		background: #ffbd39;
+	}
+
+	.btn-red {
+		border: 1px solid black;
+		background: #e3342f;
+		color: #fff;
+	}
+	.btn-red:hover {
+		border: 1px solid white;
+		background: #ff332d;
+	}
+
+	.btn-slate {
+		border: 1px solid black;
+		background: slategrey;
+		color: #fff;
+	}
+	.btn-slate:hover {
+		border: 1px solid white;
+		background: black;
+	}
+</style>

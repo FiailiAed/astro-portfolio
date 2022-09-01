@@ -1,0 +1,46 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SectionHeading from '../../layouts/SectionHeading.astro';
+
+import * as resume from '../../components/resume.md';
+---
+
+<Layout title="Markdown Resume">
+	<main class="" id="main">
+		<!-- bg-stone-900 text-stone-600 -->
+
+		<h1 class="font-serif font-bold">👋 I'm Colin Savacool.</h1>
+
+A Great Post: {resume.frontmatter.title}
+A Great Post: {resume.frontmatter.draft}
+
+		<SectionHeading title="Professional"/>
+		<SectionHeading title="Personal"/>
+		<SectionHeading title="Cool Stuff I Built"/>
+	</main>
+</Layout>
+
+<style>
+	h1 {
+		margin: 2rem 0;
+	}
+
+	main {
+		margin: auto;
+		padding: 1em;
+		max-width: 180ch;
+	}
+
+	@keyframes pulse {
+		0%,
+		100% {
+			background-position-y: 0%;
+		}
+		50% {
+			background-position-y: 80%;
+		}
+	}
+</style>
+
+<script>
+</script>

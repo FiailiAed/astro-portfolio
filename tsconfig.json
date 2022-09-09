@@ -10,6 +10,19 @@
     // Enable stricter transpilation for better output.
     "isolatedModules": true,
     // Astro will directly run your TypeScript code, no transpilation needed.
-    "noEmit": true
+    "noEmit": true,
+	"baseUrl": ".",
+	"paths": {
+		"@js/*": ["src/components/javascript/*"],
+		"@svelte/*": ["src/components/svelte/*"],
+		"@astro/*": ["src/components/astro/*"],
+		"@react/*": ["src/components/react/*"],
+		"@solid/*": ["src/components/solid/*"],
+		"@components/*": ["src/components/*"],
+		"@vue/*": ["src/components/vue/*"],
+		"@layouts/*": ["src/layouts/*"],
+		"@images/*": ["src/images/*"],
+		"@pages/*": ["src/pages/*"]
+	}
   }
 }

@@ -1,6 +1,8 @@
 ---
 import Layout from '@layouts/Layout.astro';
 import SectionHeading from '@layouts/SectionHeading.astro';
+import Button from '@components/Button.astro';
+
 import ReactCounter from '@react/ReactCounter.tsx';
 const someProps = {
 	count: 0,
@@ -25,6 +27,10 @@ import SvelteCounter from '@svelte/SvelteCounter.svelte';
 		<p>Astro gives the developer the power to use multiple front-end frameworks in one project.</p>
 		<br />
 		<p>I have simply enacted multiple counting functions on this page using the different and popular front-end frameworks but this displays the enormous power that Astro gives to SSG sites.</p>
+
+		<div class="flex justify-center p-3">
+			<Button href="/markdown/" title="View Code" color="btn btn-yellow shadow-sm shadow-black" />
+		</div>
 
 		<SectionHeading title="React"/>
 		<ReactCounter {...someProps} client:visible>

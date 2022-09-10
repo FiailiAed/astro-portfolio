@@ -14,12 +14,13 @@
 	"baseUrl": ".",
 	"paths": {
 		"@js/*": ["src/components/javascript/*"],
-		"@svelte/*": ["src/components/svelte/*"],
-		"@astro/*": ["src/components/astro/*"],
 		"@react/*": ["src/components/react/*"],
+		"@preact/*": ["src/components/preact/*"],
 		"@solid/*": ["src/components/solid/*"],
-		"@components/*": ["src/components/*"],
+		"@svelte/*": ["src/components/svelte/*"],
 		"@vue/*": ["src/components/vue/*"],
+		"@astro/*": ["src/components/astro/*"],
+		"@components/*": ["src/components/*"],
 		"@layouts/*": ["src/layouts/*"],
 		"@images/*": ["src/images/*"],
 		"@pages/*": ["src/pages/*"]

@@ -1,6 +1,15 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import SectionHeading from '../../layouts/SectionHeading.astro';
+import Layout from '@layouts/Layout.astro';
+import SectionHeading from '@layouts/SectionHeading.astro';
+import ReactCounter from '@react/ReactCounter.tsx';
+const someProps = {
+	count: 0,
+};
+
+import PreactCounter from '@preact/PreactCounter.tsx';
+import VueCounter from '@vue/VueCounter.vue';
+import SolidCounter from '@solid/SolidCounter.tsx';
+import SvelteCounter from '@svelte/SvelteCounter.svelte';
 ---
 
 <Layout title="Why Astro?">
@@ -16,9 +25,29 @@ import SectionHeading from '../../layouts/SectionHeading.astro';
 		<p>I have simply enacted multiple count functions on this page but the potential for running benchmark tests of different frameworks and having them easily display over one project.</p>
 
 		<SectionHeading title="React"/>
+		<ReactCounter {...someProps} client:visible>
+			<h3>Hello from React!</h3>
+		</ReactCounter>
+
 		<SectionHeading title="Preact"/>
-		<SectionHeading title="SolidJs"/>
+		<PreactCounter client:visible>
+			<h3>Hello from Preact!</h3>
+		</PreactCounter>
+
 		<SectionHeading title="Vue"/>
+		<VueCounter client:visible>
+			<h3>Hello from Vue!</h3>
+		</VueCounter>
+
+		<SectionHeading title="SolidJs"/>
+		<SolidCounter client:visible>
+			<h3>Hello from Solid!</h3>
+		</SolidCounter>
+
+		<SectionHeading title="Svelte"/>
+		<SvelteCounter client:visible>
+			<h3>Hello from Svelte!</h3>
+		</SvelteCounter>
 	</main>
 </Layout>
 

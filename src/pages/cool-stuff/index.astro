@@ -1,22 +1,24 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import SectionHeading from '../../layouts/SectionHeading.astro';
-
-import * as resume from '../../components/resume.md';
 ---
 
-<Layout title="Markdown Resume">
+<Layout title="Why Astro?">
 	<main class="" id="main">
-		<!-- bg-stone-900 text-stone-600 -->
+		<a href="/">
+			<i class="fa-solid fa-circle-left fa-2xl"></i>
+		</a>
 
-		<h1 class="font-serif font-bold">👋 I'm Colin Savacool.</h1>
+		<h1 class="font-serif font-bold">🚀 The power of Astro.</h1>
 
-A Great Post: {resume.frontmatter.title}
-A Great Post: {resume.frontmatter.draft}
+		<p>This page is an short example to display the power of Astro.</p>
+		<p>Astro gives the developer the power to use multiple front-end frameworks in one project.</p>
+		<p>I have simply enacted multiple count functions on this page but the potential for running benchmark tests of different frameworks and having them easily display over one project.</p>
 
-		<SectionHeading title="Professional"/>
-		<SectionHeading title="Personal"/>
-		<SectionHeading title="Cool Stuff I Built"/>
+		<SectionHeading title="React"/>
+		<SectionHeading title="Preact"/>
+		<SectionHeading title="SolidJs"/>
+		<SectionHeading title="Vue"/>
 	</main>
 </Layout>
 

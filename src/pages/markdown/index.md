@@ -40,12 +40,33 @@ export default function ReactCounter({
 	display: grid;
 	font-size: 2em;
 	grid-template-columns: repeat(3, minmax(0, 1fr));
-	margin-top: 2em;
 	place-items: center;
+	background: #a8a29e;
+	border-radius: 1rem;
+	margin: 0.5em;
+	padding: 0.5rem;
+	color: #1c1917;
 }
 
-.counter-message {
-	text-align: center;
+button {
+	border: 1px solid black;
+	padding: 0 0.75rem 0 0.75rem;
+	border-radius: 1rem;
+	background-color: #1e293b;
+	color: #fafaf9;
+}
+button:hover {
+	background-color: #334155;
+}
+button:active {
+	padding: 0 0.5rem 0 0.5rem;
+}
+
+.section-heading {
+	font-weight: bold;
+	font-size: 1.5rem;
+	padding: 0rem;
+	margin: 0rem;
 }
 ```
 
@@ -73,17 +94,7 @@ export default function PreactCounter({ children }) {
 }
 ```
 ```js
-.counter {
-	display: grid;
-	font-size: 2em;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-	margin-top: 2em;
-	place-items: center;
-}
-
-.counter-message {
-	text-align: center;
-}
+<B
 ```
 
 # Vue code
@@ -117,16 +128,37 @@ export default {
 </script>
 
 <style>
-.counter {
-	display: grid;
-	font-size: 2em;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-	margin-top: 2em;
-	place-items: center;
-}
-
-.counter-message {
-	text-align: center;
+.counter {                                                     
+    display: grid; 
+    font-size: 2em;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    place-items: center;  
+    background: #a8a29e;
+    border-radius: 1rem;
+    margin: 0.5em;                                   
+    padding: 0.5rem;
+    color: #1c1917;         
+}                                
+                        
+button {                      
+    border: 1px solid black;
+    padding: 0 0.75rem 0 0.75rem;
+    border-radius: 1rem;    
+    background-color: #1e293b;          
+    color: #fafaf9;     
+}                             
+button:hover {                                 
+    background-color: #334155;                
+}                                           
+button:active {                
+    padding: 0 0.5rem 0 0.5rem;                
+}                                             
+                                            
+.section-heading {                               
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0rem;
+    margin: 0rem;
 }
 </style>
 ```
@@ -154,16 +186,37 @@ export default function Counter({ children }) {
 }
 ```
 ```js
-.counter {
-	display: grid;
-	font-size: 2em;
-	grid-template-columns: repeat(3, minmax(0, 1fr));
-	margin-top: 3em;
-	place-items: center;
-}
-
-.counter-message {
-	text-align: center;
+.counter {                                                     
+    display: grid; 
+    font-size: 2em;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    place-items: center;  
+    background: #a8a29e;
+    border-radius: 1rem;
+    margin: 0.5em;                                   
+    padding: 0.5rem;
+    color: #1c1917;         
+}                                
+                        
+button {                      
+    border: 1px solid black;
+    padding: 0 0.75rem 0 0.75rem;
+    border-radius: 1rem;    
+    background-color: #1e293b;          
+    color: #fafaf9;     
+}                             
+button:hover {                                 
+    background-color: #334155;                
+}                                           
+button:active {                
+    padding: 0 0.5rem 0 0.5rem;                
+}                                             
+                                            
+.section-heading {                               
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0rem;
+    margin: 0rem;
 }
 ```
 
@@ -191,16 +244,37 @@ export default function Counter({ children }) {
 </div>
 
 <style>
-	.counter {
-		display: grid;
-		font-size: 2em;
-		grid-template-columns: repeat(3, minmax(0, 1fr));
-		margin-top: 2em;
-		place-items: center;
-	}
-
-	.message {
-		text-align: center;
-	}
+.counter {                                                     
+    display: grid; 
+    font-size: 2em;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    place-items: center;  
+    background: #a8a29e;
+    border-radius: 1rem;
+    margin: 0.5em;                                   
+    padding: 0.5rem;
+    color: #1c1917;         
+}                                
+                        
+button {                      
+    border: 1px solid black;
+    padding: 0 0.75rem 0 0.75rem;
+    border-radius: 1rem;    
+    background-color: #1e293b;          
+    color: #fafaf9;     
+}                             
+button:hover {                                 
+    background-color: #334155;                
+}                                           
+button:active {                
+    padding: 0 0.5rem 0 0.5rem;                
+}                                             
+                                            
+.section-heading {                               
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0rem;
+    margin: 0rem;
+}
 </style>
 ```

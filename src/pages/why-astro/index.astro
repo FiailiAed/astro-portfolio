@@ -33,29 +33,19 @@ import SvelteCounter from '@svelte/SvelteCounter.svelte';
 		</div>
 
 		<SectionHeading title="React"/>
-		<ReactCounter {...someProps} client:visible>
-			<h3>Hello from React!</h3>
-		</ReactCounter>
+		<ReactCounter {...someProps} client:visible />
 
 		<SectionHeading title="Preact"/>
-		<PreactCounter client:visible>
-			<h3>Hello from Preact!</h3>
-		</PreactCounter>
+		<PreactCounter client:visible />
 
 		<SectionHeading title="Vue"/>
-		<VueCounter client:visible>
-			<h3>Hello from Vue!</h3>
-		</VueCounter>
+		<VueCounter client:visible />
 
 		<SectionHeading title="SolidJs"/>
-		<SolidCounter client:visible>
-			<h3>Hello from Solid!</h3>
-		</SolidCounter>
+		<SolidCounter client:visible />
 
 		<SectionHeading title="Svelte"/>
-		<SvelteCounter client:visible>
-			<h3>Hello from Svelte!</h3>
-		</SvelteCounter>
+		<SvelteCounter client:visible />
 	</main>
 </Layout>
 

@@ -1,13 +1,25 @@
 ---
-title: Shiki demo
+title: Frontend Counters Code
 layout: ../../layouts/Markdown.astro
 ---
 [↩️ Go Back](/why-astro/)
+</br>
+</br>
+
 # 👋 Hello, this page will show you how the counters on my why-astro/ page are generated
+</br>
 
 # 🗒 See these code blocks below:
+- [React](#react-code)
+- [Preact](#preact-code)
+- [Vue](#vue-code)
+- [Solid](#solid-code)
+- [Svelte](#svelte-code)
 
-# React code
+</br>
+</br>
+
+## React code
 ```tsx
 import { useState } from 'react';
 import './Counter.css';
@@ -70,7 +82,10 @@ button:active {
 }
 ```
 
-# Preact code
+</br>
+</br>
+
+## Preact code
 ```tsx
 import { h, Fragment } from 'preact';
 import { useState } from 'preact/hooks';
@@ -128,7 +143,10 @@ button:active {
 }
 ```
 
-# Vue code
+</br>
+</br>
+
+## Vue code
 ```tsx
 <template>
 	<div class="counter">
@@ -194,7 +212,10 @@ button:active {
 </style>
 ```
 
-# Solid code
+</br>
+</br>
+
+## Solid code
 ```tsx
 import { createSignal } from 'solid-js';
 import './Counter.css';
@@ -251,7 +272,10 @@ button:active {
 }
 ```
 
-# Svelte code
+</br>
+</br>
+
+## Svelte code
 ```tsx
 <script lang="ts">
 	let count = 0;
